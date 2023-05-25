@@ -16,7 +16,7 @@ def main():
         metadata = SingleTableMetadata()
         metadata.detect_from_dataframe(data=df)
         st.write(metadata)
-        st.write("Synthesized data ")
+        st.write("Synthesized data (100 records)")
         # Step 1: Create the synthesizer
         synthesizer = GaussianCopulaSynthesizer(metadata)
 
